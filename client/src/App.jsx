@@ -1,11 +1,23 @@
+import Footer from "./componets/Footer"
+import Navbar from "./componets/Navbar"
+import Services from "./componets/Services"
+import Transactions from "./componets/Transactions"
+import Welcome from "./componets/Welcome"
 
 const App = () => {
 
   return (
-    <div className="App">
-      <h1 className="bg-sky-600 hover:bg-sky-700">
-        Hello world!
-      </h1>
+    <div className="min-h-screen">
+      <div className='gradient-bg-welcome'>
+        <Navbar />
+        <Welcome />
+      </div>
+      <div>
+        <Services />
+        <Transactions />
+        <Footer />
+      </div>
+      
     </div>
   )
 }
